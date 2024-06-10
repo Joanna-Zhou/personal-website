@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s;
+}
+
+.navbar-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-link.active {
+  color: #ff6347;
+}
+
+.vvd {
+  border: none;
+  background: linear-gradient(90deg, #ff8c00, #ff6347);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.vvd:hover {
+  background: linear-gradient(90deg, #ff6347, #ff8c00);
+}

@@ -2,6 +2,9 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
+import Gallery from './components/Gallery';
+import Projects from './components/Projects';
+// import StarryBackground from './components/StarryBackground';
 import Contact from './components/Contact';
 import { createGlobalStyle } from 'styled-components';
 
@@ -25,12 +28,13 @@ const GlobalStyle = createGlobalStyle`
 const App = () => (
   <div>
     <GlobalStyle />
+    {/* <StarryBackground /> */}
     <Header />
     <main>
       <Home />
       <About />
-      <PersonalWebsite />
-      <Blog />
+      <Gallery />
+      <Projects />
       <Contact />
     </main>
   </div>

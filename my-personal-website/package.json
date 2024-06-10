@@ -11,6 +11,7 @@
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
@@ -41,5 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://your-username.github.io/my-personal-website"
+  "homepage": "https://joanna-zhou.github.io/personal-website",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
