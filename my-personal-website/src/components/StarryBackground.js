@@ -1,51 +1,24 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import React from 'react';
+import styles from '../styles/StarryBackground.module.css'
+import styled from "styled-components";
+import headerImg from "../assets/images/Angel.PNG";
 
-const StarryWrapper = styled.div`
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-`;
-
-const Star = styled.div`
+const Image = styled.img`
+  z-index: 0;
+  top: -2%;
+  left:5%;
+  right:-3%;
   position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-  animation: glitter 2s infinite;
-  
-  @keyframes glitter {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
+  horizontal-align: right;
+  vertical-align: top;
 `;
 
-const StarryBackground = () => {
-  useEffect(() => {
-    const stars = Array.from({ length: 100 }, (_, i) => ({
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
-      animationDelay: `${Math.random() * 2}s`
-    }));
+const Background = () => (
+    <div>      
+      <div className={styles.stars}></div>
+      <div className={styles.twinkling}></div>
+      <Image src={headerImg} alt="Header Img" />
+    </div>
+);
 
-    const starElements = stars.map((star, index) => (
-      <Star
-        key={index}
-        style={{ top: star.top, left: star.left, animationDelay: star.animationDelay }}
-      />
-    ));
-
-    document.getElementById('star-container').append(...starElements);
-  }, []);
-
-  return <StarryWrapper id="star-container" />;
-};
-
-export default StarryBackground;
+export default Background;
