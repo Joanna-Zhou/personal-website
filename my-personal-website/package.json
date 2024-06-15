@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,11 +15,15 @@
     "react-bootstrap": "^2.10.2",
     "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18.3.1",
+    "react-grid-gallery": "^1.0.1",
+    "react-modal-image": "^2.6.0",
     "react-on-screen": "^2.1.1",
+    "react-photo-album": "^2.4.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.11",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.20.0"
   },
   "scripts": {
     "start": "react-scripts start",
