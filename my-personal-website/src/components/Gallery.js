@@ -24,87 +24,73 @@ import ImgThranduil from "../assets/images/Thranduil.jpeg";
 export const images = [
   {
     src: ImgErlangshen,
-    caption: "Artwork 2",
-    width: ImgErlangshen.width,
-    height: ImgErlangshen.height,
-  },
-  {
-    src: ImgFreedom,
-    caption: "Artwork 2",
-    width: ImgFreedom.width,
-    height: ImgFreedom.height,
+    width: 665,
+    height: 1182,
   },
   {
     src: ImgGirl,
-    caption: "Artwork 2",
-    width: ImgGirl.width,
-    height: ImgGirl.height,
-  },
-  {
-    src: ImgSun,
-    caption: "Artwork 2",
-    width: ImgSun.width,
-    height: ImgSun.height,
-  },
-  {
-    src: ImgDust,
-    caption: "Artwork 2",
-    width: ImgDust.width,
-    height: ImgDust.height,
-  },
-  {
-    src: ImgKunlun,
-    caption: "Artwork 2",
-    width: ImgKunlun.width,
-    height: ImgKunlun.height,
-  },
-  {
-    src: ImgArrow,
-    caption: "Artwork 2",
-    width: ImgArrow.width,
-    height: ImgArrow.height,
-  },
-  {
-    src: ImgMikkelsen,
-    caption: "Artwork 2",
-    width: ImgMikkelsen.width,
-    height: ImgMikkelsen.height,
-  },
-  {
-    src: ImgGlasses,
-    caption: "Artwork 2",
-    width: ImgGlasses.width,
-    height: ImgGlasses.height,
-  },
-  {
-    src: ImgPortrait,
-    caption: "Artwork 2",
-    width: ImgPortrait.width,
-    height: ImgPortrait.height,
-  },
-  {
-    src: ImgPracticeAYG,
-    caption: "Artwork 2",
-    width: ImgPracticeAYG.width,
-    height: ImgPracticeAYG.height,
-  },
-  {
-    src: ImgRomeo,
-    caption: "Artwork 2",
-    width: ImgRomeo.width,
-    height: ImgRomeo.height,
-  },
-  {
-    src: ImgPope,
-    caption: "Artwork 2",
-    width: ImgPope.width,
-    height: ImgPope.height,
+    width: 1129,
+    height: 695,
   },
   {
     src: ImgThranduil,
-    caption: "Artwork 2",
-    width: ImgThranduil.width,
-    height: ImgThranduil.height,
+    width: 686,
+    height: 1144,
+  },
+  {
+    src: ImgRomeo,
+    width: 724,
+    height: 1086,
+  },
+  {
+    src: ImgSun,
+    width: 1182,
+    height: 665,
+  },
+  {
+    src: ImgDust,
+    width: 1180,
+    height: 665,
+  },
+  {
+    src: ImgKunlun,
+    width: 1182,
+    height: 665,
+  },
+  {
+    src: ImgMikkelsen,
+    width: 706,
+    height: 1112,
+  },
+  {
+    src: ImgArrow,
+    width: 1182,
+    height: 665,
+  },
+  {
+    src: ImgFreedom,
+    width: 1182,
+    height: 665,
+  },
+  {
+    src: ImgPortrait,
+    width: 665,
+    height: 1182,
+  },
+  {
+    src: ImgGlasses,
+    width: 697,
+    height: 1128,
+  },
+  {
+    src: ImgPope,
+    width: 1179,
+    height: 667,
+  },
+  {
+    src: ImgPracticeAYG,
+    width: 724,
+    height: 1086,
   },
 ];
 
@@ -114,15 +100,15 @@ const ArtGallery = () => {
   const handleClick = (index, item) => setIndex(index);
 
   return (
-    <Section padding={300}>
+    <Section>
       <div className="gallery">
         <Gallery
           width="60%"
           images={images}
+          rowHeight={420}
           onClick={handleClick}
           enableImageSelection={false}
-          rowHeight={360}
-          layout="masonry"
+          layout="mansory"
           enableLightbox={true}
         />
       </div>
