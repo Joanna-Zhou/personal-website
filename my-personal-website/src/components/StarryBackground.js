@@ -6,8 +6,9 @@ import headerImg from "../assets/images/Angel.PNG";
 const Image = styled.img`
   z-index: 0;
   top: -2%;
-  left: 5%;
-  right: -3%;
+  left: 4%;
+  padding-left: 3%;
+  // right: 13%;
   position: absolute;
   horizontal-align: right;
   vertical-align: top;

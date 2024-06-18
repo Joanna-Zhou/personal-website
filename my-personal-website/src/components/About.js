@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Section from "./Section";
 import styled from "styled-components";
-import { Container, Row, Col, Image } from "react-bootstrap";
 import { motion } from "framer-motion";
+import TagCloud from "TagCloud";
+import "../styles/About.module.css";
 
 const Content = styled(motion.div)`
   color: #bbb;
+  text-align: right;
+  font-size: 1.4rem;
+  margin-right: 45%;
+  position: relative;
+  z-index: 2; /* Ensures Content is on top */
 `;
 
-const ProfileImage = styled(Image)`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+const TagsDiv = styled.div`
+  // background-color: red;
+  height: content-fit;
+  font-size: 1.4rem;
+  top: -20%; /* Adjust to control overlap */
+  bottom: 20%;
+  left: 56%;
+  position: absolute;
+  z-index: 1; /* Ensures TagsDiv is below Content */
 `;
 
 const aboutVariants = {
@@ -21,27 +30,59 @@ const aboutVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const About = () => (
-  <Section id="about" title="About Me">
-    <Container>
+const container = ".tagcloud";
+
+const texts = [
+  "Git",
+  "Python",
+  "C++",
+  "C#",
+  "Robotics",
+  "CI/CD",
+  "YAML",
+  "CV",
+  "NLP",
+  "Matlab",
+  "React",
+  "SLAM",
+  "XAML",
+];
+
+const options = {
+  radius: 300,
+  maxSpeed: "normal",
+  initSpeed: "normal",
+  keep: true,
+};
+
+const About = () => {
+  // Animation settings for Text Cloud
+  useEffect(() => {
+    return () => {
+      TagCloud(container, texts, options);
+    };
+  }, []);
+
+  return (
+    <Section id="about" title="About Me">
       <Content initial="hidden" animate="visible" variants={aboutVariants}>
-        <ProfileImage src="https://via.placeholder.com/200" roundedCircle />
         <p>
-          Hi! I'm Jojo, a passionate software engineer committed to crafting
-          impactful user-centered products. With a drive for innovation and
-          collaboration, I excel in problem-solving and have delivered diverse
-          projects, from generative AI and media editing features to performance
-          optimization and experimentation systems.
+          I'm a passionate software engineer committed to crafting impactful
+          user-centered products. Here let's walk through my journey from a
+          robotics student to an engineer at Microsoft.
         </p>
         <p>
-          I am also an artist painting stroke by stroke to keep myself cognizant
-          of the world around me. I believe that the creative side of human
-          being cannot be replaced by machines, and there's always expressions
-          that you need to say, sing, or paint in your own way.
+          After that, you'll see the other side of me as an artist. Regardless
+          of the evoving technology that I embrace during work, I keep myself
+          cognizant of the world around me by sitting down and painting stroke
+          by stoke.
         </p>
       </Content>
-    </Container>
-  </Section>
-);
+      <TagsDiv>
+        <span className="tagcloud"></span>
+      </TagsDiv>
+    </Section>
+  );
+};
 
 export default About;

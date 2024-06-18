@@ -125,18 +125,18 @@ const ArtGallery = () => {
           spacing: "30%",
           imageFit: "contain",
         }}
-        plugins={[Zoom]}
-        zoom={{
-          maxZoomPixelRatio: 1,
-          zoomInMultiplier: 2,
-          doubleTapDelay: 300,
-          doubleClickDelay: 500,
-          doubleClickMaxStops: 2,
-          keyboardMoveDistance: 50,
-          wheelZoomDistanceFactor: 150,
-          pinchZoomDistanceFactor: 150,
-          scrollToZoom: false,
-        }}
+        // plugins={[Zoom]}
+        // zoom={{
+        //   maxZoomPixelRatio: 1,
+        //   zoomInMultiplier: 2,
+        //   doubleTapDelay: 300,
+        //   doubleClickDelay: 500,
+        //   doubleClickMaxStops: 2,
+        //   keyboardMoveDistance: 50,
+        //   wheelZoomDistanceFactor: 150,
+        //   pinchZoomDistanceFactor: 150,
+        //   scrollToZoom: false,
+        // }}
       />
     </Section>
   );
