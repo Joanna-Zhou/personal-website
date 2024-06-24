@@ -1,15 +1,35 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.ff02f4b5.css",
-    "main.js": "/personal-website/static/js/main.a88a109f.js",
+    "main.css": "/personal-website/static/css/main.5fb06a9d.css",
+    "main.js": "/personal-website/static/js/main.6365a5e3.js",
     "static/js/453.8463039d.chunk.js": "/personal-website/static/js/453.8463039d.chunk.js",
+    "static/media/Angel.PNG": "/personal-website/static/media/Angel.4837fc4c9ed7ace8ceee.PNG",
+    "static/media/The-pope.jpeg": "/personal-website/static/media/The-pope.dcb703e23f9c901fee95.jpeg",
+    "static/media/Mikkelsen.jpeg": "/personal-website/static/media/Mikkelsen.b87631363a0c8888eec6.jpeg",
+    "static/media/Romeo-practice.jpeg": "/personal-website/static/media/Romeo-practice.c3995e2268f0b278fa64.jpeg",
+    "static/media/Girl-in-traditional-accessories.jpeg": "/personal-website/static/media/Girl-in-traditional-accessories.0f011d5b22d9e70fd87b.jpeg",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/personal-website/static/media/PlayfairDisplay-VariableFont_wght.bf46a6bcddc9999a295e.ttf",
+    "static/media/Erlangshen.jpeg": "/personal-website/static/media/Erlangshen.570a0508dbfadddb0874.jpeg",
+    "static/media/Kunlun.jpeg": "/personal-website/static/media/Kunlun.9c9b5659f93310678b8b.jpeg",
+    "static/media/Portrait.jpeg": "/personal-website/static/media/Portrait.844017ee0c280ea25266.jpeg",
+    "static/media/Man-with-bow-and-arrow.jpeg": "/personal-website/static/media/Man-with-bow-and-arrow.23748c38c4695d604d9a.jpeg",
+    "static/media/Into-dust.jpeg": "/personal-website/static/media/Into-dust.b752b908b5be6ff70a1f.jpeg",
+    "static/media/Portrait-man-with-glasses.jpeg": "/personal-website/static/media/Portrait-man-with-glasses.a4df6c8d542843117475.jpeg",
+    "static/media/Freedom.jpeg": "/personal-website/static/media/Freedom.0b7086010f3acff98a5d.jpeg",
+    "static/media/Given-the-sun.jpeg": "/personal-website/static/media/Given-the-sun.1ca41963f87c7acca6cb.jpeg",
+    "static/media/Thranduil.jpeg": "/personal-website/static/media/Thranduil.c79c553b7d8c0e9ecf49.jpeg",
+    "static/media/Practice.jpeg": "/personal-website/static/media/Practice.acc62c690578a6cf2537.jpeg",
+    "static/media/Lato-Light.ttf": "/personal-website/static/media/Lato-Light.c7400fcad9e48ca9043f.ttf",
+    "static/media/Lato-Regular.ttf": "/personal-website/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/JZLogoLight.png": "/personal-website/static/media/JZLogoLight.4bb5bed03f282b3fe9d6.png",
+    "static/media/contact-img.svg": "/personal-website/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "index.html": "/personal-website/index.html",
-    "main.ff02f4b5.css.map": "/personal-website/static/css/main.ff02f4b5.css.map",
-    "main.a88a109f.js.map": "/personal-website/static/js/main.a88a109f.js.map",
+    "main.5fb06a9d.css.map": "/personal-website/static/css/main.5fb06a9d.css.map",
+    "main.6365a5e3.js.map": "/personal-website/static/js/main.6365a5e3.js.map",
     "453.8463039d.chunk.js.map": "/personal-website/static/js/453.8463039d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff02f4b5.css",
-    "static/js/main.a88a109f.js"
+    "static/css/main.5fb06a9d.css",
+    "static/js/main.6365a5e3.js"
   ]
 }
