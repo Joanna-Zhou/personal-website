@@ -1,0 +1,38 @@
+{
+  "cvApplication": {
+    "title": "CV Shopper",
+    "role": "Detect items in a grocery store using computer vision techniques.",
+    "date": "#OpenCV #Python #Tesseract #OCR",
+    "target": "https://github.com/Joanna-Zhou/ML-Applications/tree/master/opencv-text-detection"
+  },
+  "picToArt": {
+    "title": "Picture to Art",
+    "role": "Convert any photo into a given style of artwork.",
+    "date": "#DeepLearning #Python #TensorFlow #CNN",
+    "target": "https://github.com/Joanna-Zhou/ML-Applications/tree/master/pic-to-art"
+  },
+  "ml": {
+    "title": "ML from Scratch",
+    "role": "Machine Learning projects without the use of any ML libraries.",
+    "date": "#Python #NeuralNetworks #ML",
+    "target": "https://https://github.com/Joanna-Zhou/ML-Basics"
+  },
+  "nlp": {
+    "title": "NLP Experimentations",
+    "role": "Mini-projects including Reddit sentiment classification, Neural Machine Translation, and speech recognition.",
+    "date": "#NLP #Seq2seq #Transformer #Scikit-learn #Python",
+    "target": "https://github.com/Joanna-Zhou/NLP-Applications"
+  },
+  "cv": {
+    "title": "Computer Vision experimentations",
+    "role": "Stereo matching and stereo visual odometry.",
+    "date": "Robotics #Python #OpenCV",
+    "target": "https://github.com/Joanna-Zhou/Robotics-Algorithms"
+  },
+  "robo": {
+    "title": "Robotic Pathfinding",
+    "role": "Mini-projects to try out Robotics techniques including A*, Kalman Filter, Bayesian Localization.",
+    "date": "Robotics #Python",
+    "target": "https://github.com/Joanna-Zhou/Robotics-Algorithms"
+  }
+}

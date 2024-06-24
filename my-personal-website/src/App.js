@@ -8,19 +8,22 @@ import Gallery from "./components/Gallery";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Background from "./components/StarryBackground";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => (
-  <div className="App">
-    <Background />
-    <NavBar />
-    <main>
-      <Home />
-      <About />
-      <Gallery />
-      <Projects />
-      <Contact />
-    </main>
-  </div>
+  <BrowserRouter>
+    <div className="App">
+      <Background />
+      <NavBar />
+      <main>
+        <Home />
+        <About />
+        <Projects />
+        <Gallery />
+        <Contact />
+      </main>
+    </div>
+  </BrowserRouter>
 );
 
 export default App;

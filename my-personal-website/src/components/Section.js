@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const SectionWrapper = styled.section`
   padding: 6rem 20%;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
   color: #fff;

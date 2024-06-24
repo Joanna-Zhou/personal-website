@@ -7,9 +7,9 @@ import "../styles/About.module.css";
 
 const Content = styled(motion.div)`
   color: #bbb;
-  text-align: right;
+  text-align: left;
   font-size: 1.4rem;
-  margin-right: 45%;
+  margin-right: 40%;
   position: relative;
   z-index: 2; /* Ensures Content is on top */
 `;
@@ -67,15 +67,12 @@ const About = () => {
     <Section id="about" title="About Me">
       <Content initial="hidden" animate="visible" variants={aboutVariants}>
         <p>
-          I'm a passionate software engineer committed to crafting impactful
-          user-centered products. Here let's walk through my journey from a
-          robotics student to an engineer at Microsoft.
+          Passionate software engineer at Microsoft, from a Robotics & AI
+          background at University of Toronto.
         </p>
         <p>
-          After that, you'll see the other side of me as an artist. Regardless
-          of the evoving technology that I embrace during work, I keep myself
-          cognizant of the world around me by sitting down and painting stroke
-          by stoke.
+          Artist during leisure time. I keep myself cognizant of the world
+          around me by sitting down and painting by hand.
         </p>
       </Content>
       <TagsDiv>

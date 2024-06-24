@@ -16,7 +16,6 @@ const HomeWrapper = styled.div`
 
 const Title = styled(motion.h1)`
   font-size: 4rem;
-  margin-left: 2rem;
   margin-bottom: 2rem;
   text-align: left;
   font-family: "Playfair", sans-serif;
@@ -24,7 +23,6 @@ const Title = styled(motion.h1)`
 
 const Subtitle = styled(motion.p)`
   font-size: 1.5rem;
-  margin-left: 2rem;
   text-align: left;
   font-family: "Lato", serif;
 `;
@@ -34,7 +32,6 @@ const TitleDiv = styled.div`
   z-index: 10;
   position: absolute;
 `;
-
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -93,20 +90,17 @@ const Home = () => {
         <TrackVisibility>
           {({ isVisible }) => (
             <TitleDiv
-              className={isVisible ? "animate__animated animate__fadeIn" : ""}
-            >
+              className={isVisible ? "animate__animated animate__fadeIn" : ""}>
               <Title
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1.5 }}
-              >
+                transition={{ duration: 1.5 }}>
                 {`I'm Jojo`}{" "}
               </Title>
               <Subtitle
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-              >
+                transition={{ duration: 1 }}>
                 <span className="txt-rotate">
                   <span className="wrap">{text}</span>
                 </span>

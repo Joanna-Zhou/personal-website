@@ -1,0 +1,51 @@
+.card {
+  background-color: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  color: inherit; /* Ensure it inherits the color from the parent */
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.75rem; /* Equivalent to px-1 sm:px-3 */
+  padding-top: 0.5rem; /* Equivalent to py-2 */
+  padding-bottom: 0.5rem; /* Equivalent to py-2 */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  transition: background-color 0.3s ease-in-out; /* Equivalent to duration-300 and ease-in-out */
+}
+
+.project-card:hover {
+  background-color: rgba(
+    229,
+    231,
+    235,
+    0.5
+  ); /* Equivalent to hover:bg-neutral-200/50 */
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1rem; /* Equivalent to md:text-base */
+  font-weight: bold;
+}
+
+.project-role {
+  color: #737373; /* Equivalent to text-neutral-500 */
+}
+
+.project-date {
+  color: #737373; /* Equivalent to text-neutral-500 */
+  text-align: right;
+  font-size: 0.875rem; /* Equivalent to text-sm */
+}
