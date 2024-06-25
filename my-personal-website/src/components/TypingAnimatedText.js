@@ -29,7 +29,7 @@ export default function TypingAnimatedText({ text }) {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 2 }}>
-        {displayedText ? displayedText : text}
+        <h6>{displayedText ? displayedText : text}</h6>
       </motion.span>
       <motion.span
         className="ml-1 inline-flex h-[22px] w-[2px] animate-blink rounded-full bg-neutral-200 dark:bg-neutral-800 align-sub opacity-75 animate-pulse"

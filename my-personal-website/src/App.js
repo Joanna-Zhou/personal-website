@@ -4,9 +4,9 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Gallery from "./components/Gallery";
+import Artworks from "./components/Artworks";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Background from "./components/StarryBackground";
 import { BrowserRouter } from "react-router-dom";
 
@@ -19,8 +19,8 @@ const App = () => (
         <Home />
         <About />
         <Projects />
-        <Gallery />
-        <Contact />
+        <Artworks />
+        <Footer />
       </main>
     </div>
   </BrowserRouter>

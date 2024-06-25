@@ -56,12 +56,12 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="#gallery"
+              to="#artworks"
               className={
-                activeLink === "gallery" ? "active navbar-link" : "navbar-link"
+                activeLink === "artworks" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("gallery")}>
-              Gallery
+              onClick={() => onUpdateActiveLink("artworks")}>
+              Artworks
             </Nav.Link>
           </Nav>
           <span className="navbar-text">

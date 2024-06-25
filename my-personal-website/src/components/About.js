@@ -2,28 +2,28 @@ import React, { useEffect } from "react";
 import Section from "./Section";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import TagCloud from "TagCloud";
+// import TagCloud from "TagCloud";
 import "../styles/About.module.css";
 
 const Content = styled(motion.div)`
   color: #bbb;
   text-align: left;
   font-size: 1.4rem;
-  margin-right: 40%;
+  margin-right: clamp(0.1rem, 40%, 40rem);
   position: relative;
   z-index: 2; /* Ensures Content is on top */
 `;
 
-const TagsDiv = styled.div`
-  // background-color: red;
-  height: content-fit;
-  font-size: 1.4rem;
-  top: -20%; /* Adjust to control overlap */
-  bottom: 20%;
-  left: 56%;
-  position: absolute;
-  z-index: 1; /* Ensures TagsDiv is below Content */
-`;
+// const TagsDiv = styled.div`
+//   // background-color: red;
+//   height: content-fit;
+//   font-size: 1.4rem;
+//   top: -20%; /* Adjust to control overlap */
+//   bottom: 20%;
+//   left: 56%;
+//   position: absolute;
+//   z-index: 1; /* Ensures TagsDiv is below Content */
+// `;
 
 const aboutVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -56,12 +56,12 @@ const options = {
 };
 
 const About = () => {
-  // Animation settings for Text Cloud
-  useEffect(() => {
-    return () => {
-      TagCloud(container, texts, options);
-    };
-  }, []);
+  // // Animation settings for Text Cloud
+  // useEffect(() => {
+  //   return () => {
+  //     TagCloud(container, texts, options);
+  //   };
+  // }, []);
 
   return (
     <Section id="about" title="About Me">
@@ -75,9 +75,9 @@ const About = () => {
           around me by sitting down and painting by hand.
         </p>
       </Content>
-      <TagsDiv>
+      {/* <TagsDiv>
         <span className="tagcloud"></span>
-      </TagsDiv>
+      </TagsDiv> */}
     </Section>
   );
 };

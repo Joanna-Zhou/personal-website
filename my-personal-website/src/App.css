@@ -5,8 +5,8 @@
   font-weight: 700;
 }
 @font-face {
-  font-family: Lato;
-  src: url("./assets/fonts/Lato-Regular.ttf");
+  font-family: LatoWide;
+  src: url("./assets/fonts/Lato-Bold.ttf");
   font-weight: 500;
 }
 @font-face {
@@ -41,13 +41,21 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   z-index: 1000;
   margin: 0;
   padding: 0;
   line-height: normal;
   font-family: "Playfair";
+}
+
+h6 {
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-family: "LatoWide";
+  font-size: x-large;
 }
 
 p,
@@ -61,6 +69,7 @@ ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  font-size: large;
 }
 
 a:hover {
@@ -109,12 +118,13 @@ p.danger {
 .section-header::after {
   content: "";
   /* text-align: left; */
-  border-radius: 10px;
+  border-radius: 36px;
   position: absolute;
-  left: 20px;
+  left: -16px;
   bottom: 8px; /* Adjust as necessary */
-  width: 98%;
-  height: 6px; /* Adjust thickness as necessary */
+  width: 36px;
+  z-index: -1;
+  height: 36px; /* Adjust thickness as necessary */
   background: linear-gradient(
     45deg,
     rgb(21, 101, 192, 0.8),
@@ -168,7 +178,7 @@ span.navbar-text {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 .social-icon a::before {
   content: "";
@@ -184,7 +194,7 @@ span.navbar-text {
   transform: scale(1);
 }
 .social-icon a img {
-  width: 40%;
+  width: 50%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
@@ -273,17 +283,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.contact {
+.footer {
   /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
-  padding: 60px 20rem 200px 20rem;
+  /* padding: 60px 20rem 200px 20rem; */
 }
-.contact h2 {
+.footer h2 {
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-.contact form input,
-.contact form textarea {
+.footer form input,
+.footer form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -296,23 +306,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
-.contact form input:focus,
-.contact form textarea:focus {
+.footer form input:focus,
+.footer form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
-.contact form input::placeholder,
-.contact form textarea::placeholder {
+.footer form input::placeholder,
+.footer form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
-.contact form input:focus::placeholder,
-.contact form textarea:focus::placeholder {
+.footer form input:focus::placeholder,
+.footer form textarea:focus::placeholder {
   color: #121212;
   opacity: 0.8;
 }
-.contact form button {
+.footer form button {
   font-weight: 700;
   color: #000;
   background-color: #fff;
@@ -323,14 +333,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   transition: 0.3s ease-in-out;
 }
-.contact form button span {
+.footer form button span {
   z-index: 1;
   position: relative;
 }
-.contact form button:hover {
+.footer form button:hover {
   color: #fff;
 }
-.contact form button::before {
+.footer form button::before {
   content: "";
   background: #121212;
   width: 0;
@@ -341,6 +351,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: 0;
   transition: 0.3s ease-in-out;
 }
-.contact form button:hover::before {
+.footer form button:hover::before {
   width: 100%;
 }

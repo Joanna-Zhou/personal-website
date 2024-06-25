@@ -100,7 +100,7 @@ const ArtGallery = () => {
   const handleClick = (index, item) => setIndex(index);
 
   return (
-    <Section>
+    <Section id="artworks" title="Artworks">
       <div className="gallery">
         <Gallery
           width="60%"

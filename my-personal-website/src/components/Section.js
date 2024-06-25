@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const SectionWrapper = styled.section`
-  padding: 6rem 20%;
+  padding: 6rem clamp(0.5rem, 20.5%, 100rem);
   text-align: left;
   position: relative;
   overflow: hidden;
