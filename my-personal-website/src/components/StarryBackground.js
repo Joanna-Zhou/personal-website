@@ -5,13 +5,24 @@ import headerImg from "../assets/images/Angel.PNG";
 
 const Image = styled.img`
   z-index: 0;
+  position: absolute;
   top: -2%;
   left: 4%;
   padding-left: 3%;
-  // right: 13%;
-  position: absolute;
-  horizontal-align: right;
-  vertical-align: top;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    margin-top: -90px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
 `;
 
 const Background = () => (
