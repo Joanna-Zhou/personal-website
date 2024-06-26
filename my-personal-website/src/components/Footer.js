@@ -28,19 +28,24 @@ const CopyRight = styled.p`
   opacity: 0.7;
 `;
 
-const ButtonStyled = styled.button`
+const ButtonStyled = styled.a`
   font-weight: 700;
-  margin-top: 8px;
+  margin: 2px;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.7);
-  padding: 9px 26px;
+  padding: 9px 16px;
   font-size: 16px;
   border-radius: 40px;
-  // margin-left: 12px;
   bottom: 4px;
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none; /* Ensure no underline for all states */
+  }
 
   &::before {
     content: "";
@@ -92,13 +97,10 @@ const Footer = () => {
               <a href="https://www.instagram.com/jojojoz._/" target="_blank">
                 <img src={instaIcon} alt="Instagram" />
               </a>
-              <ButtonStyled
-                href="../assets/files/JojoZhou_Resume_2024.pdf"
-                target="_blank"
-                rel="noopener noreferrer">
-                Resume
-              </ButtonStyled>
             </div>
+            <ButtonStyled href="/JojoZhou_Resume_2024.pdf" target="_blank">
+              Resume
+            </ButtonStyled>
           </Col>
         </Row>
         <CopyRight>
